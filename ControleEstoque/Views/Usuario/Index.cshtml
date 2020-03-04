@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@ViewBag.idUsuario</td>
+                    <td>@ViewBag.nomeUsuario</td>
+                    <td>@ViewBag.sobrenomeUsuario</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        @Html.ActionLink("Lista Produtos", "Index", "Produto")
+
+    </div>
+</body>
+</html>
