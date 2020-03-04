@@ -15,6 +15,10 @@ namespace ControleEstoque.Models
             p.Nome = "Monitor 24 75hz ACER";
             p.Preco = 699.99;
 
+            using (var repo = new ProdutoDAO())   // criar arquivo DAO para vincular com banco;
+            {
+                repo.Adicionar(p);
+            }
         }
 
     }
