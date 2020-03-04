@@ -9,6 +9,6 @@ namespace ControleEstoque.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public int Preco { get; set; }
+        public double Preco { get; set; }
     }
 }
