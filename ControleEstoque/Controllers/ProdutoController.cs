@@ -13,10 +13,7 @@ namespace ControleEstoque.Controllers
         public ActionResult Index()
         {
             Produto produto = new Produto();
-
-            produto.Id = 15;
-            produto.Nome = "Notebook";
-            produto.Preco = 3500;
+         //   IList<Produto> produtos = dao      Comportamento do dao para alimentar a lista.
 
             ViewBag.idProduto = produto.Id;
             ViewBag.nomeProduto = produto.Nome;
